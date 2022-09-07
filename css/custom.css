@@ -1,0 +1,146 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dce0ff;
+}
+
+.main-container {
+    background-color: #17181d;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+/* ====================== NAV ITEMS ========================= */
+.nav-item a {
+    color: #aaa;
+    font-size: 20px;
+}
+
+.nav-item a:visited {
+    color: #aaa;
+}
+
+.nav-item a:focus {
+    color: #aaa;
+}
+
+.nav-item a:hover {
+    color: #0087ca;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ============================ SECTIONS ============================= */
+
+.section-nav {
+    background-color: #17181d;
+}
+
+.section-main {
+    border-radius: 20px;
+    background-color: #131319;
+    padding: 20px;
+}
+
+
+/*  ============================ HEADINGS ================================== */
+.heading {
+    color: #EEE;
+}
+
+.heading {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: left;
+}
+
+.heading:after {
+    margin-left: 10px;
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 40%;
+    height: 1px;
+    content: '\a0';
+    background-image: linear-gradient(to right, rgba(0, 135, 202, 1), rgba(19, 19, 25, 1));
+}
+
+/* ===================== Featured Thumb , Highights Thumb ================== */
+.featured-thumb, .highlights-thumb {
+    position: relative;
+}
+
+.featured-thumb .overlay-icon,.highlights-thumb .overlay-icon {
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+.featured-thumb .title, .highlights-thumb .title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: #131319;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.highlights-thumb .title{
+    font-size: 15px;
+    margin: 8px;
+}
+
+/* ======================= BOX ============================== */
+.box-50 {
+    min-height: 50px;
+}
+
+.box-20 {
+    min-height: 20px;
+}
+
+.box-10 {
+    min-height: 10px;
+}
+
+/* ===================== MARGINS AND PADDINGS ======================= */
+.mtb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mtb20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mtb30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
