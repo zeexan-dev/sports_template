@@ -51,6 +51,38 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+hr{
+    /* color: #0087ca; */
+    /* width: 100%;
+    height: 1px;
+    content: '\a0'; */
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 135, 202, 1), rgba(19, 19, 25, 1));
+}
+/* ============================ ARCHIVED ============================ */
+.section-archived{
+    color: #aaa;
+}
+select, select option {
+    background: #aaa;
+    background-color: #aaa;
+}
+.button-custom{
+    background: #131319;
+    background-color: #131319;
+}
+.archived-row{
+    margin-top: 1.5rem;
+}
+.btn-custom{
+    background-color: transparent;
+    border-color: #aaa;
+    color: #aaa;
+}
+.btn-custom:hover{
+    border-color: #0087ca;
+    color: #0087ca;
+}
 
 /* ============================ SECTIONS ============================= */
 
@@ -100,21 +132,36 @@ body {
     top: 0;
     left: 0;
 }
-.featured-thumb .title, .highlights-thumb .title{
+.featured-thumb .title, .highlights-thumb .title, .highlights-thumb .date{
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
+    color: #ddd;
     background-color: #131319;
     padding: 10px;
     font-size: 20px;
     margin: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #131319;
 }
 .highlights-thumb .title{
     font-size: 15px;
     margin: 8px;
 }
+.highlights-thumb .date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ddd;
+    height: 30px;
+    background-color: #131319;
+    padding: 7px;
+    font-size: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px #131319;
+}
+
 
 /* ======================= BOX ============================== */
 .box-50 {
